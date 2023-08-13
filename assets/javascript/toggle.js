@@ -9,7 +9,7 @@ if (localStorage.getItem("theme") === "dark") {
 } else {
   body.classList.add("light");
   sunIcon.style.display = "none";
-  localStorage.setItem("theme", "light"); // Varsayılan olarak aydınlık temayı ayarla
+  localStorage.setItem("theme", "light");
 }
 
 themeToggle.addEventListener("click", function() {
