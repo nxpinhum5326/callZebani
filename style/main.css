@@ -1,0 +1,103 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #282c34;
+}
+
+.container{
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    cursor: pointer;
+    max-width: 60%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.shake{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake{
+    0%{ transform: translate(1px, 1px) rotate(0deg); }
+    10%{ transform: translate(-1px, -2px) rotate(-1deg); }
+    20%{ transform: translate(-3px, 0px) rotate(1deg); }
+    30%{ transform: translate(3px, 2px) rotate(0deg); }
+    40%{ transform: translate(1px, -1px) rotate(1deg); }
+    50%{ transform: translate(-1px, 2px) rotate(-1deg); }
+    60%{ transform: translate(-3px, 1px) rotate(0deg); }
+    70%{ transform: translate(3px, 1px) rotate(-1deg); }
+    80%{ transform: translate(-1px, -1px) rotate(1deg); }
+    90%{ transform: translate(1px, 2px) rotate(0deg); }
+    100%{ transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+footer{
+    background-color: #282c34;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-center{
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-lmao-part{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.footer-center i{
+    background-color: #33383b;
+    color: white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px;
+}
+
+.footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-center p span{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
